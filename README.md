@@ -22,32 +22,13 @@ wget -P hubert/ https://github.com/bshall/hubert/releases/download/v0.1/hubert-s
 
 放进去的必须是干声，无混响无和声的那种
 
-## 第三步 创建环境
-
-防止软件包冲突，我们需要先创建一个conda环境
-
-打开conda命令窗口 输入
+## 第三步 加载环境
 
 ```shell
-conda create -n sovits python=3.8 -y
+conda env create -f sovits-env.yaml
 ```
 
-请自行更新conda源和pip源，百度就能找到 最好用阿里源 然后安装依赖库
-
-```shell
-pip3 install -r requirements.txt
-```
-
-有些库可能运行时才会发现没有安装，像这样
-```
-ModuleNotFoundError: No module named xxx
-```
-
-请这样安装库 (xxx是缺失的库名)
-
-```shell
-pip3 install xxx
-```
+里面有配置好的软件包，开箱即用
 
 ## 第四步 开始使用
 
