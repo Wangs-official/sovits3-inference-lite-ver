@@ -3,7 +3,6 @@
 # 您不得用Sovits推理违法违规的内容，产生的一切问题与一键包制作者和Sovits作者无关
 # 加入了colorama库
 from colorama import Fore,Back,Style
-global it
 # ====================
 
 print('====================')
